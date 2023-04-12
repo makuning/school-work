@@ -1,0 +1,4 @@
+﻿  Main.cpp
+D:\work\school\cdtu\homework\junior\data-structure\homework2\Project2\Main.cpp(40,1): warning C4348: “Menu”: 重定义默认参数 : 参数 1
+D:\work\school\cdtu\homework\junior\data-structure\homework2\Project2\Main.cpp(8,6): message : 参见“Menu”的声明
+  Project2.vcxproj -> D:\work\school\cdtu\homework\junior\data-structure\homework2\Project2\x64\Debug\Project2.exe
