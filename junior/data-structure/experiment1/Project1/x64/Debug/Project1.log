@@ -1,0 +1,5 @@
+﻿  Main.cpp
+D:\Hub\school-work\junior\data-structure\experiment1\Project1\Main.cpp(13,18): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+D:\Hub\school-work\junior\data-structure\experiment1\Project1\Main.cpp(51,1): warning C4348: “Menu”: 重定义默认参数 : 参数 1
+D:\Hub\school-work\junior\data-structure\experiment1\Project1\Main.cpp(9,6): message : 参见“Menu”的声明
+  Project1.vcxproj -> D:\Hub\school-work\junior\data-structure\experiment1\Project1\x64\Debug\Project1.exe
