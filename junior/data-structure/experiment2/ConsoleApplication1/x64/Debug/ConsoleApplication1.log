@@ -1,0 +1,5 @@
+﻿  Main.cpp
+D:\Hub\school-work\junior\data-structure\experiment2\ConsoleApplication1\Main.cpp(59,1): warning C4348: “Menu”: 重定义默认参数 : 参数 1
+D:\Hub\school-work\junior\data-structure\experiment2\ConsoleApplication1\Main.cpp(9,6): message : 参见“Menu”的声明
+D:\Hub\school-work\junior\data-structure\experiment2\ConsoleApplication1\LinkList.h(48): warning C4172: 返回局部变量或临时变量的地址: list
+  ConsoleApplication1.vcxproj -> D:\Hub\school-work\junior\data-structure\experiment2\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe
