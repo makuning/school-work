@@ -4,8 +4,8 @@
 
 <Workspace>
 	<Local Expanded="Yes">
-		<Model Expanded="Yes" ID="{4EC9416A-CA75-48DD-9807-413AB5FFDEFC}" Name="E-albums" Type="{FF4B6538-9856-42CF-B9B9-304ED370CEAA}" URL="/work/school/cdtu/homework/junior/软件设计与体系结构/E-albums/E-albums.prj"/>
 		<Model Expanded="Yes" ID="{518E3572-A2EF-44C8-B20C-B49255130DD1}" Name="Electronic-Commerce" Type="{FF4B6538-9856-42CF-B9B9-304ED370CEAA}" URL="Electronic-Commerce/Electronic-Commerce.prj"/>
+		<Model Expanded="Yes" ID="{4EC9416A-CA75-48DD-9807-413AB5FFDEFC}" Name="E-albums" Type="{FF4B6538-9856-42CF-B9B9-304ED370CEAA}" URL="E-albums/E-albums.prj"/>
 	</Local>
 	<BrowserModule Name="Repository"/>
 </Workspace>
