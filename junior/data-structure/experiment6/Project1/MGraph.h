@@ -63,8 +63,8 @@ void MGraph<DataType>::DFTraverse(int v)
 template <typename DataType>
 void MGraph<DataType>::BFTraverse(int v)
 {
-	int w, j, Q[MaxSize];			// 采用顺序队列
-	int front = -1, rear = -1;		// 初始化队列
+	int Q[MaxSize], front = -1, rear = -1;			// 采用顺序队列并初始化队列
+	int w, j;						// 临时变量 
 	cout << vertex[v] << '\t';
 	visited[v] = 1;
 	Q[++rear] = v;					// 被访问顶点入队
