@@ -22,35 +22,45 @@ void printArr(int arr[], int len) {
 
 int main()
 {
-	int arr[MAX_SIZE];
+	int nums[] = { 12, 22, 43, 512, 5, 85, 546, 97, 23, 34, 84 };
+	int len = sizeof(nums) / sizeof(int);
+	bubbleOrderAsc(nums, len);
+	printArr(nums, len);
 
-	for (int i = 0; i < MAX_SIZE; i++) {
-		arr[i] = i;
-	}
-
-	bubbleOrderAsc(arr, MAX_SIZE);
-	
-
-	clock_t startTime, endTime;
-	int index, search = MAX_SIZE - 1;
-
-	startTime = clock();
-	printArr(arr, MAX_SIZE);
-	endTime = clock();
-	cout << "打印：" << (endTime - startTime) << "ms" << endl;
-
-	startTime = clock();
-	index = binSearch(arr, MAX_SIZE, search);
-	cout << "折半查找" << search << "的下标为：" << index << endl;
-	endTime = clock();
-	cout << "折半查找：" << (endTime - startTime) << "ms" << endl;
-
-	startTime = clock();
-	index = seqSearch(arr, MAX_SIZE, search);
-	cout << "顺序查找" << search << "的下标为：" << index << endl;
-	endTime = clock();
-	cout << "顺序查找：" << (endTime - startTime) << "ms" << endl;
-	
 	return 0;
 }
+
+//int main()
+//{
+//	int arr[MAX_SIZE];
+//
+//	for (int i = 0; i < MAX_SIZE; i++) {
+//		arr[i] = i;
+//	}
+//
+//	bubbleOrderAsc(arr, MAX_SIZE);
+//	
+//
+//	clock_t startTime, endTime;
+//	int index, search = MAX_SIZE - 1;
+//
+//	startTime = clock();
+//	printArr(arr, MAX_SIZE);
+//	endTime = clock();
+//	cout << "打印：" << (endTime - startTime) << "ms" << endl;
+//
+//	startTime = clock();
+//	index = binSearch(arr, MAX_SIZE, search);
+//	cout << "折半查找" << search << "的下标为：" << index << endl;
+//	endTime = clock();
+//	cout << "折半查找：" << (endTime - startTime) << "ms" << endl;
+//
+//	startTime = clock();
+//	index = seqSearch(arr, MAX_SIZE, search);
+//	cout << "顺序查找" << search << "的下标为：" << index << endl;
+//	endTime = clock();
+//	cout << "顺序查找：" << (endTime - startTime) << "ms" << endl;
+//	
+//	return 0;
+//}
 
