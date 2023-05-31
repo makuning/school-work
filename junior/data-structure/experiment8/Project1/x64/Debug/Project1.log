@@ -1,4 +1,3 @@
 ﻿  Main.cpp
-  Sort.cpp
-  正在生成代码...
+D:\hub\school-work\junior\data-structure\experiment8\Project1\Main.cpp(22,12): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
   Project1.vcxproj -> D:\hub\school-work\junior\data-structure\experiment8\Project1\x64\Debug\Project1.exe

@@ -1,5 +1,90 @@
 #include "Sort.h"
 
+// 快速排序递归函数
+void quickSort(int arr[], int low, int high) {
+	if (low < high) {
+		// 以数组最后一个元素作为基准，将小于基准的元素放在左边，大于基准的元素放在右边
+		int pivot = arr[high];  // 基准元素
+		int i = low - 1;  // 较小元素的索引
+		int temp;
+
+		for (int j = low; j < high; j++) {
+			if (arr[j] <= pivot) {
+				i++;
+				temp = arr[i];
+				arr[i] = arr[j];
+				arr[j] = temp;
+			}
+		}
+
+		temp = arr[i + 1];
+		arr[i + 1] = arr[high];
+		arr[high] = temp;
+		pivot = i + 1;
+
+		// 递归对基准左右两侧的子数组进行排序
+		quickSort(arr, low, pivot - 1);
+		quickSort(arr, pivot + 1, high);
+	}
+}
+
+// 快速排序函数，接受一个整数数组和数组长度作为参数
+void quickSort(int arr[], int length) {
+	quickSort(arr, 0, length - 1);
+}
+
+// 希尔排序-升序
+void shellAsc(int nums[], int len) {
+	// 计算增量序列的初始值
+	int gap = len / 2;
+
+	// 不断缩小增量，直到增量为1
+	while (gap > 0) {
+		// 对每个增量进行插入排序
+		for (int i = gap; i < len; i++) {
+			int temp = nums[i];
+			int j = i;
+
+			// 在当前增量下，将元素插入到已排序序列的正确位置
+			while (j >= gap && nums[j - gap] > temp) {
+				nums[j] = nums[j - gap];
+				j -= gap;
+			}
+
+			nums[j] = temp;
+		}
+
+		// 缩小增量
+		gap /= 2;
+	}
+}
+
+// 希尔排序-降序
+void shellDesc(int nums[], int len) {
+	// 计算增量序列的初始值
+	int gap = len / 2;
+
+	// 不断缩小增量，直到增量为1
+	while (gap > 0) {
+		// 对每个增量进行插入排序
+		for (int i = gap; i < len; i++) {
+			int temp = nums[i];
+			int j = i;
+
+			// 在当前增量下，将元素插入到已排序序列的正确位置
+			while (j >= gap && nums[j - gap] < temp) {
+				nums[j] = nums[j - gap];
+				j -= gap;
+			}
+
+			nums[j] = temp;
+		}
+
+		// 缩小增量
+		gap /= 2;
+	}
+}
+
 // 插入排序-降序
 void insertDesc(int nums[], int len) {
 	int i, j, max, maxIndex;
